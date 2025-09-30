@@ -1,6 +1,6 @@
-using Contexto;
 using Redis;
 using Microsoft.EntityFrameworkCore;
+using Database.MySQL.Contexto;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +13,9 @@ builder.Services.AddSwaggerGen();
 
 // MySQL DBContexto registration
 builder.Services.AddDbContext<DBContexto>(options =>
-    options.UseMySql(
+    options
+    .UseLazyLoadingProxies()
+    .UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
         new MySqlServerVersion(new Version(8, 0, 0))
     )
@@ -21,7 +23,7 @@ builder.Services.AddDbContext<DBContexto>(options =>
 
 // Redis connection registration
 builder.Services.AddSingleton(x => new conexionRedis(
-    builder.Configuration.GetConnectionString("RedisConnection")
+    builder.Configuration.GetConnectionString("RedisConnection") ?? "localhost:6379"
 ));
 
 var app = builder.Build();

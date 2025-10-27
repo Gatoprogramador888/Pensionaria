@@ -1436,9 +1436,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gatob\\Documents\\Pensionaria\\Database\\Database.csproj",
-      "projectName": "Database",
-      "projectPath": "C:\\Users\\gatob\\Documents\\Pensionaria\\Database\\Database.csproj",
+      "projectUniqueName": "C:\\Users\\gatob\\Documents\\Pensionaria\\Database\\Pensionaria.csproj",
+      "projectName": "Pensionaria",
+      "projectPath": "C:\\Users\\gatob\\Documents\\Pensionaria\\Database\\Pensionaria.csproj",
       "packagesPath": "C:\\Users\\gatob\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\gatob\\Documents\\Pensionaria\\Database\\obj\\",
       "projectStyle": "PackageReference",
@@ -1519,7 +1519,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

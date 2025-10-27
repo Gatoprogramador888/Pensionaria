@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y+Jn62/D960=",
+  "dgSpecHash": "lCigewjgH3Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gatob\\Documents\\Pensionaria\\Database\\Database.csproj",
+  "projectFilePath": "C:\\Users\\gatob\\Documents\\Pensionaria\\Database\\Pensionaria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gatob\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\gatob\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.9\\microsoft.entityframeworkcore.9.0.9.nupkg.sha512",

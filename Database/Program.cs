@@ -1,6 +1,6 @@
-using Redis;
+using Database.Database.Redis;
 using Microsoft.EntityFrameworkCore;
-using Database.MySQL.Contexto;
+using Database.Database.MySQL.Contexto;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +23,7 @@ builder.Services.AddDbContext<DBContexto>(options =>
 
 // Redis connection registration
 builder.Services.AddSingleton(x => new conexionRedis(
+    //Modificar la cadena de conexion en appsettings.json
     builder.Configuration.GetConnectionString("RedisConnection") ?? "localhost:6379"
 ));
 
